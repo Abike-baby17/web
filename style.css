@@ -1,0 +1,393 @@
+body {
+    margin: auto;
+    padding-top: 60px; /* prevent content from hiding behind nav */
+}
+.mum {
+    display: inline-block;
+    padding: 5px;
+    background-color:rgba(171, 88, 4, 0.888) ;
+    color: rgba(248, 248, 255, 0.916) ;
+    border-radius:5px ;
+    font-size: 16px;
+    font-weight: bold
+}
+header {
+    background-color: rgb(241, 137, 34);
+    padding:40px ;
+    border: 5px;
+    text-align: center;
+}
+div {
+    background-color: rgba(245, 245, 220, 0.811);
+}
+ul.li::marker {
+   color: rgba(255, 127, 80, 0.826);
+   background-color: #f8f8ff; 
+}
+.spaced-img {
+    margin-right: 10px;
+    margin-bottom:10px ;
+    /* display: block; */
+}
+/* Style for the main header */
+.main-header .temi {
+    background-color:rgb(241, 137, 34) ;
+    color: rgba(248, 248, 255, 0.916) ;
+    text-align: left;
+}
+.button {
+    display: inline-block;
+    padding: 10px;
+    background-color:rgba(171, 88, 4, 0.888) ;
+    color: rgba(248, 248, 255, 0.916) ;
+    border-radius:5px ;
+    font-size: 16px;
+    font-weight: bold;
+}
+.sub-header {
+    background-color:rgba(241, 137, 34, 0.815) ;
+    color: rgba(248, 248, 255, 0.916) ;
+    padding: 20px;
+    border: 5px;
+    text-align: center;
+}
+.gallery {
+    display: flex;
+    gap: 20px;/* space between images*/
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.image-box {
+    background-color: rgba(240, 248, 255, 0.863);
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+.image-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+.image-box p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.532);
+}
+.tunmi {
+    background-color: rgba(255, 255, 255, 0.84);
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+.tunmi input
+.tunmi textarea {
+    background-color: rgba(245, 245, 220, 0.811);
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid ;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;    
+}
+.tunmi button {
+    width: 100%;
+    background-color: rgba(103, 52, 23, 0.902);
+    color: rgba(255, 245, 240, 0.671);
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(169, 79, 15, 0.888);
+    padding: 15px ;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    z-index: 1000;
+  }
+
+  nav a {
+    background-color: rgba(255, 255, 255, 0.881);
+    color: rgba(14, 3, 3, 0.916);
+    text-decoration: none;
+    padding: 10px ;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+
+  nav a:hover {
+    background-color: rgba(255, 136, 0, 0.829);
+  }
+  .logo {
+    float: left;
+  }
+
+  .photo {
+    display: flex;
+    gap: 20px;/* space between images*/
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.picture-box {
+    background-color: rgba(240, 248, 255, 0.863);
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+.picture-box img {
+    width: 100%;
+    display: block;
+    height: 150px;
+    object-fit: cover;
+}
+.picture-box img {
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.532);
+}
+.button-2 {
+    display: inline-block;
+    padding: 10px;
+    background-color:rgba(171, 88, 4, 0.888) ;
+    color: rgba(248, 248, 255, 0.916) ;
+    border-radius:5px ;
+    font-size: 16px;
+    font-weight: bold;
+}
+.the-header {
+    background-color:rgba(241, 137, 34, 0.815) ;
+    color: rgba(248, 248, 255, 0.916) ;
+    padding: 15px;
+    border: 5px;
+    text-align: center;
+}
+.iremide {
+      background-color: rgba(245, 245, 220, 0.811);
+      padding: 80px;
+      max-width: 850px;
+      text-align: center;
+      /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.301); */
+      /* border-radius: 5px; */
+    }
+    h1 {
+      color: rgba(255, 166, 0, 0.973);
+      margin-bottom: 10px;
+    }
+    h2 {
+      color:rgba(0, 0, 0, 0.904);
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color:rgba(0, 0, 0, 0.61);
+    }
+    a {
+      color:rgba(255, 166, 0, 0.845);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .tummy {
+      background-color: rgba(0, 0, 0, 0.836);
+      padding: 100px;
+      max-width: 805px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.815);
+      border-radius: 10px;
+    }
+    h3 {
+      color:rgba(255, 68, 0, 0.66);
+      margin-bottom: 10px;
+    }
+    h2 {
+      color:rgba(255, 255, 255, 0.751);
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    .button-3 {
+    display: inline-block;
+    padding: 10px;
+    background-color:rgba(171, 88, 4, 0.888) ;
+    color: rgba(248, 248, 255, 0.916) ;
+    border-radius:5px ;
+    font-size: 16px;
+    font-weight: bold;
+}
+.tofunmi {
+  display: flex;
+  flex-direction: rows;
+  gap: 20px;  /*space between each text + image pair */
+}
+.item {
+  display: flex;
+  align-items: center;
+}
+.item img {
+  width: 40px;
+  height: 30px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+.abike {
+  display: flex;
+  flex-direction: rows;
+  gap: 20px;  /*space between each text */
+}
+.items {
+  display: flex;
+  align-items: center;
+}
+.tour-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 20px;
+  flex-wrap: wrap; 
+}
+.left-content {
+  max-width: 30%;
+}
+.left-content h4{
+  color: rgba(255, 68, 0, 0.847);
+  font-size: 14px;
+}
+.desc {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.small-desc {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.66);
+}
+.duration {
+  max-width: 50%;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.duration-card {
+  background-color: rgba(255, 255, 255, 0.954);
+  border-radius: 10px;
+  padding: 25px;
+  width: 195px;
+  box-shadow: 8px rgba(0, 0, 0, 0 .1);
+}
+h2 {
+  font-size: 20px;
+  margin: 10px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.97);
+}
+.highlight {
+  color: rgba(255, 166, 0, 0.893);
+}
+p {
+  line-height: 1.4;
+  font-size: 16px;
+}
+      .consult {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* height: 90vh; */
+      margin: 0;
+    } 
+    .consultation {
+      background: rgba(255, 255, 255, 0.858);
+      padding: 30px;
+      max-width: 400px;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    input {
+      padding: 5px;
+      border-radius: 5px;
+      width: 90%;
+      background-color: rgba(245, 245, 220, 0.811);
+    }
+    textarea {
+      padding: 5px;
+      border-radius: 5px;
+      width: 90%;
+      background-color: rgba(245, 245, 220, 0.811);
+
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: rgba(255, 166, 0, 0.854);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+button:hover {
+      background-color:rgba(255, 68, 0, 0.806);
+    }
+#join-team {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: ;
+}
+    /* #popup-toggle {
+      display: none;
+    }
+    /* popup overlay */
+    /* .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0);
+      justify-content: center;
+      align-items: center;
+    } */
+    /* #popup-toogle:checked + .popup {
+      display: flex;
+    } */
+    /* .popup-content {
+      background: rgba(255, 255, 255, 0.913);
+      padding: 30px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    } */
+
+    /* .popup-content h2 {
+      margin-bottom: 10px;
+      color: rgba(51, 51, 51);
+    }
+    .popup-content p {
+      color: rgba(102, 102, 102);
+    }
+
+    .close-btn { */
+      /* margin-top: 20px;
+      display: inline-block;
+      background: rgba(0, 123, 255);
+      color: white;
+      padding: 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+     .close-btn:hover {
+      background: rgba(0, 86, 179);
+    }
+     */
