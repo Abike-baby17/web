@@ -17,9 +17,9 @@
         <header>
         <h1 class="these-header" style="text-align: center; color: rgba(255, 255, 255, 0.822);">Join Our Team</h1>
              </header>
-             <section id="join-team"></section>
-        <p>Passionate about travel? We'd love to have you on board!</p>
-        <form action="" method="post">
+             <section id="join-team">
+        <h3>Passionate about travel? We'd love to have you on board!</h3>
+        <form id="contact-form">
         <label for="name">Full Name</label><br>
         <input type="text" id="name" name="name" required>
         <br><br>
@@ -43,6 +43,58 @@
         <button type="submit">Submit Application</button>
     </form>
     </section>
+    <div class="popup" id="popup">
+    <div class="popup-content">
+      <p>Thank you! We will get back to you soon.</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("contact-form");
+    const popup = document.getElementById("popup");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault(); // Stop form from submitting to server
+      popup.style.display = "flex"; // Show the popup
+      form.reset(); // Optionally clear the form
+    });
+
+    function closePopup() {
+      popup.style.display = "none";
+    }
+  </script>
+  <div class="footer" style="background-color: rgba(0, 0, 0, 0.943);">
+            <div class="footer-container" style="background-color: rgba(0, 0, 0, 0.918);">
+                <div class="footer-column" style="background-color: rgba(0, 0, 0, 0.918);">
+                    <h3 style="background-color: rgba(0, 0, 0, 0.918);">Voya Tours</h3>
+                    <p style="background-color: rgba(0, 0, 0, 0.918);">Voya travel agency is a travel expert providing 5-star group & private tours in Europe and Asia. Our clients travel to 200+ destinations.</p>
+                    <p style="background-color: rgba(0, 0, 0, 0.918);">We sell not tours but emotions.</p>
+                    </div>
+                <div class="footer-column" style="background-color: rgba(0, 0, 0, 0.916);">
+                    <h3>Navigation</h3>
+                    <a href="homepage.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="tour.html">Tours</a>
+                    <a href="contact.html">Contacts</a>
+                    <a href="testimonials.html">Testimonials</a>
+                </div>
+                <div class="footer-column" style="background-color: rgba(0, 0, 0, 0.916) ;">
+                    <h3>Tours</h3>
+                    <a href="Incredible Paris.html">Incredible Paris</a>
+                    <a href="Zakinthos Beaches.html">Zakinthos Beaches</a>
+                    <a href="Cappadocia Tour.html">Cappadocia Tour</a>
+                    <a href="Holidays in Taipei.html">Holidays in Taipei</a>
+                    <a href="London Tour.html">London Tour</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p style="background-color: rgba(0, 0, 0, 0.959);  color: rgba(255, 255, 255, 0.95);">&copy; 2025 Voya Tours. All rights reserved.</p>
+            </div>
+        </div>
+
+
+
     
 </body>
 </html>
