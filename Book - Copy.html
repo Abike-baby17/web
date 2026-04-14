@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a tour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <a href="homepage.html" target="_blank"> HOME</a>
+    <a href="about.html" target="_blank">ABOUT US</a>
+    <a href="testimonials.html" target="_blank"> TESTIMONIALS</a>
+    <a href="contact.html" target="_blank">CONTACT US</a>
+    <a href="tour.html" target="_blank">TOUR</a>
+         </nav> 
+        <header>
+        <h1 class="these-header" style="text-align: center; color: rgba(255, 255, 255, 0.822);">Book a Tour</h1>
+             </header>
+             <section id="form-box">
+        <form id="contact-form">
+        <label for="name">Your Name</label><br>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">Email Address</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="Phone">Phone Number</label><br>
+        <input type="number" id="phone" name="phone" required>
+        <br><br>
+         <label for="tour">Tour</label><br>
+        <select id="tour" name="tour" required>
+            <option value="incredible paris">Incredible Paris</option>
+            <option value="zakinthos beaches">Zakinthos Beaches</option>
+            <option value="cappadocia tour">Cappadocia Tour</option>
+            <option value="holidays in taipei">Holidays in Taipei</option>
+            <option value="London tour">London Tour</option>
+        </select><br><br>
+        <label for="date">Preferred Date</label><br>
+        <input type="date" id="date" name="date" required>
+        <br><br>
+        <label for="people">Number of People</label><br>
+        <input type="number" id="people" name="people" min="1" required>
+        <br><br>
+        <label for="message">Special Request</label><br>
+        <textarea name="message" id="message" rows="3"></textarea>
+        <br><br>
+        <label for="language">The language you speak</label><br>
+        <input type="text" id="language" name="language" required>
+        <br><br>
+        <button type="submit">Submit Booking</button>
+    </form>
+    </section>
+    <div class="popup" id="popup">
+    <div class="popup-content">
+      <p>You have successfully book a tour.</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("contact-form");
+    const popup = document.getElementById("popup");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault(); // Stop form from submitting to server
+      popup.style.display = "flex"; // Show the popup
+      form.reset(); // Optionally clear the form
+    });
+
+    function closePopup() {
+      popup.style.display = "none";
+    }
+  </script>
+  <div class="footer" style="background-color: rgba(0, 0, 0, 0.943);">
+            <div class="footer-container" style="background-color: rgba(0, 0, 0, 0.918);">
+                <div class="footer-column" style="background-color: rgba(0, 0, 0, 0.918);">
+                    <h3 style="background-color: rgba(0, 0, 0, 0.918);">Voya Tours</h3>
+                    <p style="background-color: rgba(0, 0, 0, 0.918);">Voya travel agency is a travel expert providing 5-star group & private tours in Europe and Asia. Our clients travel to 200+ destinations.</p>
+                    <p style="background-color: rgba(0, 0, 0, 0.918);">We sell not tours but emotions.</p>
+                    </div>
+                <div class="footer-column" style="background-color: rgba(0, 0, 0, 0.916);">
+                    <h3>Navigation</h3>
+                    <a href="homepage.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="tour.html">Tours</a>
+                    <a href="contact.html">Contacts</a>
+                    <a href="testimonials.html">Testimonials</a>
+                </div>
+                <div class="footer-column" style="background-color: rgba(0, 0, 0, 0.916) ;">
+                    <h3>Tours</h3>
+                    <a href="Incredible Paris.html">Incredible Paris</a>
+                    <a href="Zakinthos Beaches.html">Zakinthos Beaches</a>
+                    <a href="Cappadocia Tour.html">Cappadocia Tour</a>
+                    <a href="Holidays in Taipei.html">Holidays in Taipei</a>
+                    <a href="London Tour.html">London Tour</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p style="background-color: rgba(0, 0, 0, 0.959);  color: rgba(255, 255, 255, 0.95);">&copy; 2025 Voya Tours. All rights reserved.</p>
+            </div>
+        </div>
+
+
+
+    
+</body>
+</html>
